@@ -1,0 +1,83 @@
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 1
+Enter Name: Suleman Sohail
+Enter Mobile: 0300-12343234
+Invalid Input String must contain '-' and 11 numbers...
+ Enter Mobile: 0300-1234467
+Enter Phone: 34567876
+Enter Email: suleman@pucit.edu.pk
+Enter Website: www.suleman.com
+Enter City: Lahore
+operation successful...
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 7
+Name: Aazam Sultan	,	Mobile: 0349-4902816	,	Phone: 428482952	,	Email: m.aazamsultan@gmail.com	,	Website: www.aazamjutt.live	,	City: Lahore	,	
+
+Name: Omer Bhatti	,	Mobile: 0313-1495092	,	Phone: 90078601	,	Email: omerbhatti@pucit.edu.pk	,	Website: www.omerbhatti.me	,	City: Shadra	,	
+
+Name: Faateh Sultan	,	Mobile: 0312-6343235	,	Phone: 12332234432	,	Email: faatehsultan@gmail.com	,	Website: faatehsultan.github.io	,	City: Lahore	,	
+
+Name: Suleman Sohail	,	Mobile: 0300-12343234	,	Phone: 34567876	,	Email: suleman@pucit.edu.pk	,	Website: www.suleman.com	,	City: Lahore	,	
+
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 4
+Delete by?
+1: Name	2: Mobile	3: Phone
+Enter Choice(1-3)? : 1
+Enter Name:? Suleman Sohail
+operation successful...
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 7
+Name: Aazam Sultan	,	Mobile: 0349-4902816	,	Phone: 428482952	,	Email: m.aazamsultan@gmail.com	,	Website: www.aazamjutt.live	,	City: Lahore	,	
+
+Name: Omer Bhatti	,	Mobile: 0313-1495092	,	Phone: 90078601	,	Email: omerbhatti@pucit.edu.pk	,	Website: www.omerbhatti.me	,	City: Shadra	,	
+
+Name: Faateh Sultan	,	Mobile: 0312-6343235	,	Phone: 12332234432	,	Email: faatehsultan@gmail.com	,	Website: faatehsultan.github.io	,	City: Lahore	,	

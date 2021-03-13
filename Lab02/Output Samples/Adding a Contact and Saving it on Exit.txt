@@ -1,0 +1,40 @@
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 1
+Enter Name: Ahsan Shiekh
+Enter Mobile: 0332-2343234
+Enter Phone: 234432323
+Enter Email: ahsan@yahoo.com
+Enter Website: www.ahsan.com
+Enter City: Peshawar
+operation successful...
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 8
+Save Changes? 1: Yes	2: No
+Enter Choice:? 1
+Data Updated Successfully...
+
+Process finished with exit code 0

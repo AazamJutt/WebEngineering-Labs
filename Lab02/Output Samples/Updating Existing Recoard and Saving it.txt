@@ -1,0 +1,69 @@
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 6
+0  - 	Name: Aazam Sultan	,	Mobile: 0349-4902816	,	Phone: 428482952	,	Email: m.aazamsultan@gmail.com	,	Website: www.aazamjutt.live	,	City: Lahore	,	
+
+1  - 	Name: Omer Bhatti	,	Mobile: 0313-1495092	,	Phone: 90078601	,	Email: omerbhatti@pucit.edu.pk	,	Website: www.omerbhatti.me	,	City: Shadra	,	
+
+2  - 	Name: Faateh Sultan	,	Mobile: 0312-6343235	,	Phone: 12332234432	,	Email: faatehsultan@gmail.com	,Website: faatehsultan.github.io	,	City: Lahore	,	
+
+3  - 	Name: Ahsan Shiekh	,	Mobile: 0332-2343234	,	Phone: 234432323	,	Email: ahsan@yahoo.com	,	Website: www.ahsan.com	,	City: Peshawar	,	
+
+Enter Number of Record You want to update(0-3)? 0
+What do You want to Update?
+1: Name	2: Mobile	3: Phone
+4: Email	5: Website	6: City
+Enter Choice(1-6)? : 4
+Enter Email: bcsf18m036@pucit.edu.pk
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 7
+Name: Aazam Sultan	,	Mobile: 0349-4902816	,	Phone: 428482952	,	Email: bcsf18m036@pucit.edu.pk	,	Website: www.aazamjutt.live	,	City: Lahore	,	
+
+Name: Omer Bhatti	,	Mobile: 0313-1495092	,	Phone: 90078601	,	Email: omerbhatti@pucit.edu.pk	,	Website: www.omerbhatti.me	,	City: Shadra	,	
+
+Name: Faateh Sultan	,	Mobile: 0312-6343235	,	Phone: 12332234432	,	Email: faatehsultan@gmail.com	,	Website: faatehsultan.github.io	,	City: Lahore	,	
+
+Name: Ahsan Shiekh	,	Mobile: 0332-2343234	,	Phone: 234432323	,	Email: ahsan@yahoo.com	,	Website: www.ahsan.com	,	City: Peshawar	,	
+
+What do you want to do with AddressBook?
+1. Add contact in Address Book
+2. Exact Search Contact by following :
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+3. Special Search By:
+	 Name (first name , last name), Mobile, Phone, City, Email, Website.
+4. Delete contact By:
+	 name , mobile and phone.
+5. Delete all contacts By:
+	 name , city and mobile.
+6. Update Contact in Address Book.
+7: View All Contacts
+8: Exit.
+Enter Choice(1-8): 8
+Save Changes? 1: Yes	2: No
+Enter Choice:? 1
+Data Updated Successfully...
+
+Process finished with exit code 0
