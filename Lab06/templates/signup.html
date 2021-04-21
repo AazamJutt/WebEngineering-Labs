@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div width="500" class="container">
+        <h1 style="text-align: center;">Sign up</h1>
+        <hr>
+        <form action="/register" method="POST">
+            <label style="margin-top:10px;">Username:</label>
+            <input width="48" type="text" class="form-control" name="name" placeholder="John Doe" required>
+            <label style="margin-top:10px;">Email:</label>
+            <input width="48" type="text" class="form-control" name="email" placeholder="email@gmail.com" required>
+            <label style="margin-top:10px">Password:</label>
+            <input width="48" type="password" class="form-control" name="pass" placeholder="Must be more than 8 characters" required>
+            <p style="margin-top:10px; color: red;">{{error}}</p>
+            <input class = "btn btn-success" style="margin-top:10px" type="submit" value="Sign up">
+        </form>
+        <hr>
+        <p>Already have an Account?  <a href="/">Sign in</a> </p>
+        <hr>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .button {
+          background-color: lightblue;
+          border: none;
+          width: 20%;
+          color: black;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 30px;
+          margin-top: 4px ;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var expression = "";
+        function btnClicked(id){
+            this.expression = expression + id;
+            console.log(expression);
+            document.getElementById("expressionBar").value=expression;
+        }
+        function backspace(){
+            this.expression = expression.slice(0,-1);
+            document.getElementById("expressionBar").value=expression;
+        }
+
+        function clr(){
+            this.expression = "";
+            document.getElementById("expressionBar").value=this.expression;
+        }
+
+        function getOperator(){
+            for(i = 0;i<expression.length;i++){
+                if(expression.charAt(i)=='+' || expression.charAt(i) =='-' || expression.charAt(i) == '/' || expression.charAt(i) =='*'){
+                    return i;
+                }
+            }
+            return -1;
+        }
+        function value(ch){
+            return parseFloat(ch);
+        }
+        function evaluateExpression(){
+            oprIndex = getOperator()
+            if(oprIndex==-1){
+                error();
+                return;
+            }
+            res = 0;
+            opr = expression.charAt(oprIndex);
+            operands = expression.split(expression.charAt(oprIndex));
+            if(operands.length==1){
+                error();
+                return;
+            }
+            if(opr == '+'){
+                res = value(operands[0]) + value(operands[1]);
+            }
+            else if(opr == '-'){
+                res = value(operands[0]) - value(operands[1]);
+            }
+            else if(opr == '*'){
+                res= value(operands[0]) * value(operands[1]);
+            }
+            else if(opr == '/'){
+                if(value(operands[1]== 0.0)){
+                    error();
+                    return;
+                }
+                res= value(operands[0]) / value(operands[1]);
+            }
+            else{
+                error();
+                return;
+            }
+            expression = res.toString();
+            if(res=="NaN"){
+                error();
+                return;
+            }
+            document.getElementById("expressionBar").value=res.toString();
+        }
+        function error(){
+            this.expression = "invalid operation";
+            document.getElementById("expressionBar").value=expression;
+        }
+    </script>
+    <div style="text-align: center; margin: 20px 40px 20px 10px;">
+        <h1>Calculator</h1><hr>
+        <input id="expressionBar"  type="text" style="width: 80%; height: 70px; text-align: right; font-size: 50px;" disabled>
+        <br>
+        <div style="padding-top: 5px;">
+            
+            <button class="button" onClick=clr() style="background-color: grey; color: white;"value="C">C</button>
+            <button class="button" onClick=backspace() style="background-color: lightcoral; color: white;" value="B">⌫</button>
+            <br>
+            <button class="button" onClick=btnClicked(this.value) value="7">7</button>
+            <button class="button" onClick=btnClicked(this.value) value="8">8</button>
+            <button class="button" onClick=btnClicked(this.value) value="8">9</button>
+            <button class="button" onClick=btnClicked(this.value) style="background-color: darkorange; color: white;" value="/">÷</button>
+            <br>
+            <button class="button" onClick=btnClicked(this.value) value="4">4</button>
+            <button class="button" onClick=btnClicked(this.value) value="5">5</button>
+            <button class="button" onClick=btnClicked(this.value) value="6">6</button>
+            <button class="button" onClick=btnClicked(this.value) style="background-color: darkorange; color: white;" value="*">x</button>
+            <br>
+            <button class="button" onClick=btnClicked(this.value) value="1">1</button>
+            <button class="button" onClick=btnClicked(this.value) value="2">2</button>
+            <button class="button" onClick=btnClicked(this.value) value="3">3</button>
+            <button class="button" onClick=btnClicked(this.value) style="background-color: darkorange; color: white;" value="+">+</button>
+            <br>
+            <button class="button" onClick=btnClicked(this.value) value="0">0</button>
+            <button class="button" onClick=btnClicked(this.value) value=".">.</button>
+            <button class="button" onClick=evaluateExpression() style="background-color: mediumblue; color: white;"value="=">=</button>
+            <button class="button" onClick=btnClicked(this.value) style="background-color: darkorange; color: white;" value="-">-</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

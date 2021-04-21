@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Donor</title>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="margin-top:10px" class="container">
+        <h1>Add Donor</h1>
+        <hr>
+        <h4 style="margin-left:10px">Welcome! {{ name }}</h4>
+        <hr>
+    <form action="/donor" method="POST">
+        <label style="margin-top:10px">Name:</label>
+        <input type="text" class="form-control" name="name" placeholder="20 character or less." required>
+        <label style="margin-top:10px">Blood Group:</label>
+        <input type="text" class="form-control" name="blood_group" placeholder="e.g. AB+" required>
+        <label style="margin-top:10px">Phone:</label>
+        <input type="text" class="form-control" name="phone" placeholder="03XX-XXXXXXX. It must be 12 characters." required>
+        <label style="margin-top:10px">Cnic:</label>
+        <input type="text" class="form-control" name="cnic" placeholder="XXXXX-XXXXXXX-X" required>
+        <label style="margin-top:10px">City:</label>
+        <input type="text" class="form-control" name="city" placeholder="Karachi" required>
+        <p style="margin-top:10px; color: red;">{{error}}</p>
+        <input class = "btn btn-success" style="margin-top:10px" type="submit" value="Register">
+        <a class="btn btn-succes" style="margin-top:20px; margin-left: 10px; background-color: red; color: white;" type="submit" href="/logout">Logout</a>
+        <hr>
+        <a class="btn btn-succes" style="background-color:coral; color: white;" type="url" value="Return to Dashboard" href="/dashboard">Return to Dashboard</a>
+    </form>
+    </div>
+</body>
+</html>

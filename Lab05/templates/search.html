@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Donors</title>
+</head>
+<body>
+{{ error }}
+<h1>Search Donor</h1>
+<hr>
+<form action="/search" method="POST">
+    <label>Name</label>
+    <input type="text" name="name"/>
+    <label>Blood Group</label>
+    <input type="text" name="bg"/>
+    <label>Phone Number</label>
+    <input type="text" name="phn"/>
+    <label>City</label>
+    <input type="text" name="ct"/>
+
+    <input style="background-color: rgb(0, 183, 255)" type = "submit" name="search" value="Search">
+</form>
+<hr>
+<table border="1 pxl">
+<tr>
+    <th>Name</th><th>Bloodgroup</th><th>Phone</th><th>CNIC</th><th>City</th>
+</tr>
+
+    {% for donor in donorList %}
+        <tr>
+            <td>{{ donor.name }}</td>
+            <td>{{ donor.blood_group }}</td>
+            <td>{{ donor.phone }}</td>
+            <td>{{ donor.cnic }}</td>
+            <td>{{ donor.city }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <hr>
+    <a href="/">Return to Menu</a>
+</body>
+</html>
